@@ -853,3 +853,281 @@ body {
   flex-direction: column;
   align-items: baseline;
 }
+
+/* registartion */
+.ex_background {
+  background-image: url("./assets/images/registartion_left.svg"),
+    url("./assets/images/registartion_right.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: bottom right, top left;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ex_form,
+.ex_form_login {
+  display: flex;
+
+  margin: auto;
+}
+.ex_signup_form_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 87.02%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+.ex_login_form_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 67.47%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+.ex_signup_form {
+  width: 18.62vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ex_login_form {
+  width: 24.32vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ex_signup_form_title,
+.ex_login_form_title {
+  font-family: var(--bold);
+  font-weight: 700;
+}
+.ex_signup_form_inputs label,
+.ex_login_form_inputs label {
+  font-family: var(--lightSans);
+}
+.ex_signup_form_inputs input,
+.ex_login_form_inputs input {
+  box-sizing: border-box;
+  font-family: var(--lightSans);
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 20px;
+  border: var(--action_border);
+  width: 100%;
+}
+.ex_arrow {
+  background: url("./assets/images/LogoArrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (min-width: 900px) {
+  .ex_form {
+    min-width: 735px;
+    flex-direction: row;
+    gap: 140px;
+    width: 38.28vw;
+  }
+  .ex_form_login {
+    min-width: 810px;
+    flex-direction: row;
+    gap: 7.3vw;
+    width: 38.28vw;
+  }
+  .ex_arrow {
+    width: 14.58vw;
+
+    min-width: 280px;
+    height: 100%;
+  }
+  .ex_signup_form {
+    min-width: 362px;
+  }
+  .ex_login_form {
+    min-width: 467px;
+  }
+  .ex_signup_form_title,
+  .ex_login_form_title {
+    font-size: 48px;
+  }
+  .ex_signup_form_inputs,
+  .ex_login_form_inputs {
+    margin-top: 64px;
+
+    gap: 24px;
+  }
+  .ex_signup_form_inputs label,
+  .ex_login_form_inputs label {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .ex_signup_form_inputs input,
+  .ex_login_form_inputs input {
+    font-size: 18px;
+    height: 50px;
+  }
+  .ex_signup_form_submit,
+  .ex_login_form_submit {
+    width: 200px;
+    height: 64px;
+    font-size: 24px;
+    margin-top: 64px;
+  }
+  .stay_logged,
+  .ex_fogot_password {
+    margin-top: 12px;
+  }
+  .ex_fogot_password {
+    font-size: 20px;
+  }
+  .container {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .ex_form {
+    gap: 40px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ex_form_login {
+    gap: 40px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ex_arrow {
+    min-width: 160px;
+    height: 160px;
+  }
+  .ex_signup_form,
+  .ex_login_form {
+    min-width: 250px;
+  }
+  .ex_signup_form_title,
+  .ex_login_form_title {
+    font-size: 24px;
+  }
+  .ex_signup_form_inputs,
+  .ex_login_form_inputs {
+    margin-top: 48px;
+
+    gap: 16px;
+  }
+  .ex_signup_form_inputs label,
+  .ex_login_form_inputs label {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .ex_signup_form_inputs input,
+  .ex_login_form_inputs input {
+    font-size: 14px;
+    height: 40px;
+    min-width: 250px;
+  }
+  .ex_signup_form_submit,
+  .ex_login_form_submit {
+    font-size: 18px;
+
+    width: 150px;
+    height: 48px;
+    margin-top: 48px;
+  }
+  .stay_logged,
+  .ex_fogot_password {
+    margin-top: 8px;
+  }
+  .container {
+    font-size: 12px;
+  }
+  .ex_fogot_password {
+    font-size: 14px;
+  }
+}
+.ex_signup_form_submit,
+.ex_login_form_submit {
+  background-color: var(--action_color);
+  font-family: var(--lightSans);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 20px;
+}
+/* checkbox */
+
+.container {
+  font-family: var(--lightSans);
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  line-height: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  font-family: var(--light_font);
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: var(--action_border);
+  border-radius: 5px;
+}
+
+.container:hover input ~ .checkmark {
+  border: var(--action_border);
+  border-radius: 5px;
+}
+.container input:checked ~ .checkmark {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: var(--action_border);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* checkbox */
+.ex_fogot_password {
+  font-family: var(--lightSans);
+  margin: auto;
+}
